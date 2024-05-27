@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Buy & Sell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+        body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.header {
+    height: 80px;
+    width: 70%;
+    background-color:  rgb(32, 218, 122);
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .shoppe {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+        /* Container styles */
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(10, 142, 171, 0.1);
+            margin-top: 30px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(32, 218, 122);
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            color: rgb(20, 19, 19);
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        
+
+
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 0rem;
+            
+        }
+
+        .contact-form, .contact-details {
+            flex: 1;
+            padding: 1.5rem;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .contact-form h2, .contact-details h2 {
+            color: #333;
+            margin-bottom: 3rem;
+             margin-top: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: rgb(32, 218, 122);
+            color: white;
+            border: none;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10rem;
+            
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            height: 170px;
+            width: 70%;
+            background-color:  rgb(32, 218, 122);
+            border-radius: 3px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <p class="shoppe">Shoppe</p>
+        <div class="navbar">
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="buy.html">Buy</a>
+                    <a href="#">Sell</a>
+                    <a href="about.html">About us</a>
+                </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main class="contact-container">
+        <class="contact-form">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="sendButton">Submit</button>
+            </form>
+       
+        
+    </main>
+    <footer>
+          <class="contact-details">
+            <h2>Contact Information</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us using the contact details below:</p>
+            <h3>Email: shoppe@gmail.com</h3>
+            <h4>Phone: +91 8675812699</h4>
+            <h5>Address: KCG COLLEGE OF TECHNOLOGY,CHENNAI</h5>
+        <p>&copy; 2023 Buy & Sell. All rights reserved.</p>
+    </footer>
+    <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+        
+        // Display a popup message using the built-in alert function
+        alert("Your response has been submitted!");
+        event.target.reset();
+    });
+
+
+    </script>
+</body>
+</html>

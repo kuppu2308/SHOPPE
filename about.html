@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+        body {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    width: 70%;
+    background-color:  rgb(32, 218, 122);
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .shoppe {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+        /* Container styles */
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(10, 142, 171, 0.1);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(32, 218, 122);
+            padding: 10px 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        header {
+            color: rgb(20, 19, 19);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* About section styles */
+        .about-section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .about-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+        }
+
+        /* Team section styles */
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .team-member {
+            margin: 20px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Footer styles */
+        footer {
+            height: 60px;
+            width: 70%;
+            background-color:  rgb(32, 218, 122);
+            border-radius: 3px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <p class="shoppe">Shoppe</p>
+        <div class="navbar">
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="buy.html">Buy</a>
+                    <a href="#">Sell</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+        </div>
+    </div>
+    <header>
+        <h1>About us</h1>
+    </header>
+
+    <div class="container">
+        <div class="about-section">
+            <h2>Who We Are</h2>
+            <p>Welcome to our platform where buying and selling used products is made simple and convenient. Our mission is to provide a trustworthy marketplace for individuals to find great deals on pre-owned items and to empower sellers to easily connect with potential buyers.</p>
+        </div>
+
+        <div class="team-section">
+            <div class="team-member">
+                <img src="kuppu.jpg" alt="Team Member 1">
+                <h3>KUPPU SHANMUGANATHAN</h3>
+                <p>Co-founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="kishore.jpg" alt="Team Member 2">
+                <h3>KISHORE</h3>
+                <p>Co-founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="rathiesh.jpg" alt="Team Member 3">
+                <h3>RATHIESH</h3>
+                <p>Co-founder & CEO</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Buy & Sell. All rights reserved.</p>
+    </footer>
+</body>
+</html>
